@@ -87,8 +87,8 @@ describe('even', () => {
 describe('odd', () => {
   test(
     'check if a number is odd', () => {
-      expected = false;
+      expected = true;
       actual = isEven(97);
-      expect(actual).toBe(expected);
+      expect(actual).not.toBe(expected);
     })
 });
