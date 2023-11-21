@@ -23,7 +23,7 @@ const even = (number) => {
 };
 
 const odd = (number) => {
-    return number & 2 !== 0;
+    return number % 2 !== 0;
 };
 
 module.exports = {
