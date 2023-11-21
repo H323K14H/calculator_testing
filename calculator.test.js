@@ -69,7 +69,12 @@ describe('modulus', () => {
 });
 
 describe('even', () => {
-
+  test(
+    'check if a number is even', () => {
+      expected = false;
+      actual = even(7);
+      expect(actual).toBe(expected);
+    })
 });
 
 describe('odd', () => {
