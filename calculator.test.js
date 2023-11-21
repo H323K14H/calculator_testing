@@ -42,7 +42,12 @@ describe('subtract', () => {
 });
 
 describe('multiply', () => {
-
+  test(
+    'can multiply 2 small numbers', () => {
+      expected = 35;
+      actual = multiply(7, 5);
+      expect(actual).toBe(expected);
+    })
 });
 
 describe('divide', () => {
