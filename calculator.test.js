@@ -6,6 +6,7 @@ const {
   modulus,
   even,
   odd,
+  isEven,
 } = require("./calculator");
 
 describe('sum', () => {
@@ -78,7 +79,7 @@ describe('even', () => {
   test(
     'check if a number is even', () => {
       expected = false;
-      actual = even(7);
+      actual = isEven(7);
       expect(actual).toBe(expected);
     })
 });
@@ -86,8 +87,8 @@ describe('even', () => {
 describe('odd', () => {
   test(
     'check if a number is odd', () => {
-      expected = true;
-      actual = odd(97);
+      expected = false;
+      actual = isEven(97);
       expect(actual).toBe(expected);
     })
 });

@@ -18,13 +18,10 @@ const modulus = (a, b) => {
     return a % b;
 };
 
-const even = (number) => {
+const isEven = (number) => {
     return number % 2 === 0;
 };
 
-const odd = (number) => {
-    return number % 2 !== 0;
-};
 
 module.exports = {
     sum,
@@ -32,6 +29,5 @@ module.exports = {
     multiply,
     divide,
     modulus,
-    even,
-    odd
+    isEven
 };
