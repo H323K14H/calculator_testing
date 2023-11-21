@@ -17,19 +17,21 @@ describe('sum', () => {
   });
 
   test('can add two large positive numbers', () => {
-    expected = sum(3_453_212, 456_787_654);
-    actual = 460_240_866;
+    expected = 460_240_866;
+    actual = sum(3_453_212, 456_787_654);
     expect(actual).toBe(expected);
   });
 
   test('can add two negative numbers', () => {
-    expected = sum(-17, -89);
-    actual = -106;
+    expected = -106;
+    actual = sum(-17, -89);
     expect(actual).toBe(expected);
   });
 
-  test.skip('can add zero', () => {
-
+  test('can add zero', () => {
+    expected = 0;
+    actual = sum(0, 0);
+    expect(actual).toBe(expected);
   });
 
 });
