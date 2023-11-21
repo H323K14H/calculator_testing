@@ -51,7 +51,12 @@ describe('multiply', () => {
 });
 
 describe('divide', () => {
-
+  test(
+    'can divide 2 small numbers', () => {
+      expected = 4;
+      actual = divide(24, 6);
+      expect(actual).toBe(expected);
+    })
 });
 
 describe('modulus', () => {
