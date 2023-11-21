@@ -16,8 +16,10 @@ describe('sum', () => {
     expect(actual).toBe(expected);
   });
 
-  test.skip('can add two large positive numbers', () => {
-
+  test('can add two large positive numbers', () => {
+    expected = sum(3_453_212, 456_787_654);
+    actual = 460_240_866;
+    expect(actual).toBe(expected);
   });
 
   test.skip('can add two negative numbers', () => {
