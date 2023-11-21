@@ -35,6 +35,26 @@ describe('sum', () => {
     expect(actual).toBe(expected);
   });
 
+  test('can add 2 floating point numbers', () => {
+    /*
+      the sum of these 2 floating numbers is 
+      0.30000000000000004 because of rounding 
+      errors inherent to floating numbers.
+    */
+    actual = sum(0.1, 0.2);
+
+    /* 
+    '.toBeCloseTo'checks for approximate equality 
+    between floating numbers. 
+    
+    The 2nd argument (the precision value) limits 
+    the number of digits to check after the decimal point.
+    */
+
+    // expect actual to be close to 0.3 to 15 decimal places
+    expect(actual).toBeCloseTo(0.3, 15);
+  });
+
 });
 
 describe('subtract', () => {
