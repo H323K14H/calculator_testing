@@ -60,7 +60,12 @@ describe('divide', () => {
 });
 
 describe('modulus', () => {
-
+  test(
+    'can find the modulus of a number', () => {
+      expected = 0;
+      actual = modulus(12, 2);
+      expect(actual).toBe(expected);
+    })
 });
 
 describe('even', () => {
